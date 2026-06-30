@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Snazzy Paws Grooming — Professional dog grooming services in Hamilton. Book your appointment today." />
+    <title>Home | Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="site-header" role="banner">
+      <nav class="nav container" aria-label="Main navigation">
+        <a href="index.html" class="nav__brand" aria-label="Snazzy Paws Grooming — Home">
+          <span class="nav__brand-icon" aria-hidden="true">🐾</span>
+          Snazzy Paws Grooming
+        </a>
+        <ul class="nav__links" role="list">
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="booking.html" class="btn btn--primary nav__cta">Book Now</a>
+        <button
+          class="nav__toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+      <nav
+        class="nav__mobile"
+        id="mobile-nav"
+        aria-label="Mobile navigation"
+        aria-hidden="true"
+      >
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="booking.html">Booking</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="btn btn--primary">Book Now</a>
+      </nav>
+    </header>
+
+    <!-- ===================== MAIN ===================== -->
+    <main id="main-content">
+
+      <!-- Hero -->
+      <section class="hero" aria-label="Welcome banner">
+        <img
+          src="images/hero.jpg"
+          alt="A happy golden retriever being groomed at Snazzy Paws Grooming salon"
+          class="hero__image"
+        />
+        <div class="container">
+          <div class="hero__content">
+            <p class="hero__tagline">Hamilton's trusted dog grooming salon</p>
+            <h1 class="hero__title">We keep them calm, <br />clean &amp; happy</h1>
+            <p class="hero__subtitle">
+              Professional grooming services tailored to every breed — from a quick bath and brush to a full spa package.
+            </p>
+            <div class="hero__actions">
+              <a href="booking.html" class="btn btn--primary">Book Now →</a>
+              <a href="services.html" class="btn btn--outline">View Services</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Status bar -->
+      <div class="status-bar" role="status" aria-live="polite">
+        <span class="status-badge">
+          <span class="status-badge__dot" aria-hidden="true"></span>
+          Open now — closes at 5:00pm
+        </span>
+      </div>
+
+      <!-- Our Services -->
+      <section class="section" aria-labelledby="services-heading">
+        <div class="container">
+          <div class="section__header">
+            <h2 id="services-heading">Our Services</h2>
+            <p>We offer a full range of grooming services to keep your dog looking and feeling their best.</p>
+          </div>
+          <div class="services-grid">
+            <a href="booking.html" class="service-card">
+              <img src="images/pkg-bath.jpg" alt="Dog being bathed and brushed at Snazzy Paws Grooming" class="service-card__image" />
+              <div class="service-card__body">
+                <h3 class="service-card__name">Bath &amp; Brush</h3>
+                <p class="service-card__desc">Shampoo, blow-dry, brush-out and nail trim.</p>
+                <p class="service-card__price">$25 – $50</p>
+              </div>
+            </a>
+            <a href="booking.html" class="service-card">
+              <img src="images/service-haircut.jpg" alt="Dog receiving a haircut at Snazzy Paws Grooming" class="service-card__image" />
+              <div class="service-card__body">
+                <h3 class="service-card__name">Haircut</h3>
+                <p class="service-card__desc">Bath, blow-dry, breed-standard or custom cut, and nail trim.</p>
+                <p class="service-card__price">$45 – $85</p>
+              </div>
+            </a>
+            <a href="booking.html" class="service-card">
+              <img src="images/salon-bath.jpg" alt="Dog enjoying a spa grooming package at Snazzy Paws" class="service-card__image" />
+              <div class="service-card__body">
+                <h3 class="service-card__name">Spa Package</h3>
+                <p class="service-card__desc">Bath, haircut, teeth brushing, nail trim and special scents.</p>
+                <p class="service-card__price">$75 – $150</p>
+              </div>
+            </a>
+          </div>
+          <div class="services-cta">
+            <a href="services.html" class="btn btn--dark">View All Services →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us -->
+      <section class="section section--alt" aria-labelledby="about-heading">
+        <div class="container">
+          <div class="about-grid">
+            <img src="images/about.jpg" alt="The owners of Snazzy Paws Grooming with their dog" class="about__image" />
+            <div class="about__text">
+              <h2 id="about-heading">About Us</h2>
+              <p>
+                Snazzy Paws Grooming was founded by a couple with a lifelong passion for dogs and a commitment to providing top-notch grooming to the Hamilton community. We understand that bringing your dog in for grooming can be stressful — for both of you — so we focus on creating a calm, caring environment where every dog feels safe and comfortable.
+              </p>
+              <p>
+                Our experienced team has a deep knowledge of breed-specific grooming standards, and we take the time to get to know every dog and their individual needs. Whether your pup is a regular visitor or a first-timer, you can trust us to treat them like one of our own.
+              </p>
+              <a href="contact.html" class="btn btn--dark">Get in Touch →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Customer Reviews -->
+      <section class="section" aria-labelledby="reviews-heading">
+        <div class="container">
+          <div class="section__header">
+            <h2 id="reviews-heading">What Our Customers Say</h2>
+            <p>Don't just take our word for it — here's what local dog owners think.</p>
+          </div>
+          <div class="reviews-grid">
+            <article class="review-card">
+              <p class="review-card__quote" aria-hidden="true">"</p>
+              <p class="review-card__text">Absolutely love Snazzy Paws! My golden retriever always comes home looking gorgeous and so relaxed. The staff are so gentle and clearly love dogs.</p>
+              <p class="review-card__author">— Sarah M., Golden Retriever owner</p>
+            </article>
+            <article class="review-card">
+              <p class="review-card__quote" aria-hidden="true">"</p>
+              <p class="review-card__text">My border collie can be anxious around strangers but they handled her beautifully. Best grooming experience we've had in Hamilton by far.</p>
+              <p class="review-card__author">— James T., Border Collie owner</p>
+            </article>
+            <article class="review-card">
+              <p class="review-card__quote" aria-hidden="true">"</p>
+              <p class="review-card__text">Booked the senior dog package for our 12-year-old lab and they were incredibly gentle and attentive. Will definitely be coming back regularly.</p>
+              <p class="review-card__author">— Linda K., Labrador owner</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Dog Care Tips -->
+      <section class="section section--alt" aria-labelledby="tips-heading">
+        <div class="container">
+          <div class="section__header">
+            <h2 id="tips-heading">Dog Care Tips</h2>
+            <p>Expert advice on keeping your dog healthy, happy, and well-groomed between visits.</p>
+          </div>
+          <div class="tips-grid">
+            <article class="tip-card">
+              <img src="images/tip-brushing.jpg" alt="Dog being brushed at home" class="tip-card__image" />
+              <div class="tip-card__body">
+                <h3 class="tip-card__title">How Often Should You Brush Your Dog?</h3>
+                <p class="tip-card__preview">Regular brushing keeps your dog's coat healthy and reduces shedding. Here's a breed-by-breed guide.</p>
+              </div>
+            </article>
+            <article class="tip-card">
+              <img src="images/tip-nails.jpg" alt="Dog having its nails trimmed" class="tip-card__image" />
+              <div class="tip-card__body">
+                <h3 class="tip-card__title">Signs Your Dog Needs a Nail Trim</h3>
+                <p class="tip-card__preview">Overgrown nails can cause pain and posture problems. Learn the warning signs to watch for.</p>
+              </div>
+            </article>
+            <article class="tip-card">
+              <img src="images/tip-puppy.jpg" alt="Puppy experiencing its first grooming session" class="tip-card__image" />
+              <div class="tip-card__body">
+                <h3 class="tip-card__title">Preparing Your Puppy for Their First Groom</h3>
+                <p class="tip-card__preview">First grooming experiences shape how your puppy feels about grooming for life. Here's how to make it positive.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <p class="footer__brand">🐾 Snazzy Paws Grooming</p>
+            <div class="footer__info">
+              <p>260 Anglesea Street, Hamilton, New Zealand</p>
+              <p>(07) 000 0000</p>
+              <p>hello@snazzypaws.co.nz</p>
+            </div>
+          </div>
+          <div>
+            <p class="footer__heading">Quick Links</p>
+            <nav class="footer__links" aria-label="Footer navigation">
+              <a href="index.html">Home</a>
+              <a href="services.html">Services</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="booking.html">Booking</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+          </div>
+          <div>
+            <p class="footer__heading">Opening Hours</p>
+            <div class="footer__hours">
+              <p>Monday – Saturday: 9:00am – 5:00pm</p>
+              <p>Sunday: Closed</p>
+            </div>
+            <p class="footer__heading" style="margin-top:1.25rem;">Newsletter</p>
+            <form class="footer__newsletter-form" aria-label="Newsletter signup">
+              <label for="newsletter-email" class="sr-only">Email address</label>
+              <input
+                type="email"
+                id="newsletter-email"
+                name="email"
+                placeholder="Email address"
+                aria-label="Your email address"
+              />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p style="margin-top:0.4rem;">© 2025 Snazzy Paws Grooming. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile nav toggle
+      const toggle = document.querySelector('.nav__toggle');
+      const mobileNav = document.querySelector('.nav__mobile');
+      toggle.addEventListener('click', function () {
+        const isOpen = mobileNav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', isOpen);
+        mobileNav.setAttribute('aria-hidden', !isOpen);
+      });
+    </script>
+
+  </body>
+</html>

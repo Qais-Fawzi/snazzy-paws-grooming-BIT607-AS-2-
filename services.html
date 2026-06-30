@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Snazzy Paws Grooming services and pricing — bath and brush, haircuts, nail trims, spa packages and more." />
+    <title>Services | Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="site-header" role="banner">
+      <nav class="nav container" aria-label="Main navigation">
+        <a href="index.html" class="nav__brand" aria-label="Snazzy Paws Grooming — Home">
+          <span class="nav__brand-icon" aria-hidden="true">🐾</span>
+          Snazzy Paws Grooming
+        </a>
+        <ul class="nav__links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" class="active" aria-current="page">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="booking.html" class="btn btn--primary nav__cta">Book Now</a>
+        <button
+          class="nav__toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+      <nav class="nav__mobile" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+        <a href="index.html">Home</a>
+        <a href="services.html" aria-current="page">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="booking.html">Booking</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="btn btn--primary">Book Now</a>
+      </nav>
+    </header>
+
+    <!-- ===================== MAIN ===================== -->
+    <main id="main-content">
+
+      <!-- Page Hero -->
+      <section class="page-hero" aria-label="Services page header">
+        <div class="container">
+          <h1>Our Grooming Services</h1>
+          <p>Professional grooming for every dog, every breed — from a quick tidy-up to a full luxury spa day.</p>
+        </div>
+      </section>
+
+      <!-- Grooming Packages -->
+      <section class="section" aria-labelledby="packages-heading">
+        <div class="container">
+          <div class="section__header">
+            <h2 id="packages-heading">Grooming Packages</h2>
+            <p>Our most popular packages — choose the right one for your dog's breed and coat type.</p>
+          </div>
+          <div class="packages-grid">
+            <a href="booking.html" class="package-card">
+              <img src="images/pkg-bath.jpg" alt="Dog being bathed and brushed" class="package-card__image" />
+              <div class="package-card__body">
+                <h3 class="package-card__name">Bath &amp; Brush</h3>
+                <p class="package-card__price">$25 – $50</p>
+              </div>
+            </a>
+            <a href="booking.html" class="package-card">
+              <img src="images/pkg-haircut.jpg" alt="Dog receiving a breed-specific haircut" class="package-card__image" />
+              <div class="package-card__body">
+                <h3 class="package-card__name">Haircut</h3>
+                <p class="package-card__price">$45 – $85</p>
+              </div>
+            </a>
+            <a href="booking.html" class="package-card">
+              <img src="images/pkg-fullgroom.jpg" alt="Dog after a full groom at Snazzy Paws" class="package-card__image" />
+              <div class="package-card__body">
+                <h3 class="package-card__name">Full Groom</h3>
+                <p class="package-card__price">$60 – $120</p>
+              </div>
+            </a>
+            <a href="booking.html" class="package-card">
+              <img src="images/salon-bath.jpg" alt="Dog enjoying a luxury spa grooming package" class="package-card__image" />
+              <div class="package-card__body">
+                <h3 class="package-card__name">Spa Package</h3>
+                <p class="package-card__price">$75 – $150</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Overview -->
+      <section class="section section--alt" aria-labelledby="pricing-heading">
+        <div class="container">
+          <div class="section__header">
+            <h2 id="pricing-heading">Pricing Overview</h2>
+            <p>All prices vary depending on dog size, breed, and coat condition. Contact us for a personalised quote.</p>
+          </div>
+          <table class="pricing-table" aria-label="Service pricing overview">
+            <thead>
+              <tr>
+                <th scope="col">Service</th>
+                <th scope="col">Includes</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="service-name">Bath &amp; Brush</td>
+                <td>Shampoo, blow-dry, brush-out, nail trim</td>
+                <td class="price-col">$25 – $50</td>
+              </tr>
+              <tr>
+                <td class="service-name">Haircut</td>
+                <td>Bath, blow-dry, haircut, nail trim</td>
+                <td class="price-col">$45 – $85</td>
+              </tr>
+              <tr>
+                <td class="service-name">Nail Trim</td>
+                <td>Trim nails and filing</td>
+                <td class="price-col">$10 – $20</td>
+              </tr>
+              <tr>
+                <td class="service-name">Ear Cleaning</td>
+                <td>Gentle cleaning to remove wax and debris</td>
+                <td class="price-col">$10 – $15</td>
+              </tr>
+              <tr>
+                <td class="service-name">Teeth Brushing</td>
+                <td>Brushing with pet-safe toothpaste</td>
+                <td class="price-col">$10 – $15</td>
+              </tr>
+              <tr>
+                <td class="service-name">Full Groom</td>
+                <td>Bath, haircut, teeth brushing, nail trim, ear cleaning</td>
+                <td class="price-col">$60 – $120</td>
+              </tr>
+              <tr>
+                <td class="service-name">Spa Package</td>
+                <td>Full groom plus special scents and conditioners</td>
+                <td class="price-col">$75 – $150</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Specialised Treatments -->
+      <section class="section" aria-labelledby="treatments-heading">
+        <div class="container">
+          <div class="section__header">
+            <h2 id="treatments-heading">Specialised Treatments</h2>
+            <p>Additional treatments available to suit your dog's specific needs — can be added to any package.</p>
+          </div>
+          <div class="treatments-grid">
+            <a href="booking.html" class="treatment-card">
+              <h3 class="treatment-card__name">De-shedding Treatment</h3>
+              <p class="treatment-card__price">$20 – $40 (add-on)</p>
+              <p class="treatment-card__desc">Special shampoo and undercoat removal to significantly reduce shedding at home.</p>
+            </a>
+            <a href="booking.html" class="treatment-card">
+              <h3 class="treatment-card__name">Medicated Bath</h3>
+              <p class="treatment-card__price">$20 – $40 (add-on)</p>
+              <p class="treatment-card__desc">For pets with skin conditions requiring special medicated shampoo and treatment.</p>
+            </a>
+            <a href="booking.html" class="treatment-card">
+              <h3 class="treatment-card__name">Flea &amp; Tick Treatment</h3>
+              <p class="treatment-card__price">$15 – $30</p>
+              <p class="treatment-card__desc">Specialised shampoo and preventative treatment to protect your dog against fleas and ticks.</p>
+            </a>
+            <a href="booking.html" class="treatment-card">
+              <h3 class="treatment-card__name">Express Service</h3>
+              <p class="treatment-card__price">$15 – $25 (add-on)</p>
+              <p class="treatment-card__desc">For dogs that need minimal grooming or a quick touch-up between full sessions.</p>
+            </a>
+            <a href="booking.html" class="treatment-card">
+              <h3 class="treatment-card__name">Special-breed Cuts</h3>
+              <p class="treatment-card__price">Price on consultation</p>
+              <p class="treatment-card__desc">Breed-specific cuts or styling based on customer preference, quoted after a consultation.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tailored Packages -->
+      <section class="section section--alt" aria-labelledby="tailored-heading">
+        <div class="container">
+          <div class="section__header">
+            <h2 id="tailored-heading">Tailored Packages</h2>
+            <p>Specially designed grooming services for dogs with unique needs.</p>
+          </div>
+          <div class="tailored-grid">
+            <a href="booking.html" class="tailored-card">
+              <img src="images/pkg-puppy.jpg" alt="Puppy receiving its first grooming session" class="tailored-card__image" />
+              <div class="tailored-card__body">
+                <h3 class="tailored-card__name">Puppy Package</h3>
+                <p class="tailored-card__price">$30 – $60</p>
+                <p class="tailored-card__desc">Introductory grooming services tailored for puppies experiencing their first salon visit. Gentle, patient, and positive.</p>
+              </div>
+            </a>
+            <a href="booking.html" class="tailored-card">
+              <img src="images/pkg-senior.jpg" alt="Senior dog receiving gentle grooming care" class="tailored-card__image" />
+              <div class="tailored-card__body">
+                <h3 class="tailored-card__name">Senior Dog Package</h3>
+                <p class="tailored-card__price">$40 – $80</p>
+                <p class="tailored-card__desc">Grooming services tailored for older dogs, with special handling, extra rest breaks, and gentle techniques throughout.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gift Vouchers -->
+      <section class="section" aria-labelledby="vouchers-heading">
+        <div class="container">
+          <div class="section__header">
+            <h2 id="vouchers-heading">Gift Vouchers</h2>
+            <p>Treat a dog-loving friend or family member to a grooming session at Snazzy Paws.</p>
+          </div>
+          <div class="gift-voucher">
+            <img src="images/gift-voucher.jpg" alt="Snazzy Paws Grooming gift voucher" class="gift-voucher__image" />
+            <div class="gift-voucher__content">
+              <h3>Give the Gift of Grooming</h3>
+              <p>Our gift vouchers are available in a range of amounts and can be used toward any grooming service. Purchase online or in-salon — perfect for birthdays, holidays, or just because.</p>
+              <a href="booking.html" class="btn btn--primary">Purchase a Voucher →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Banner -->
+      <section class="cta-banner" aria-label="Booking call to action">
+        <div class="container">
+          <h2>Ready to book?</h2>
+          <p>Book online in minutes — we'd love to meet your dog.</p>
+          <a href="booking.html" class="btn btn--primary">Book Now →</a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <p class="footer__brand">🐾 Snazzy Paws Grooming</p>
+            <div class="footer__info">
+              <p>260 Anglesea Street, Hamilton, New Zealand</p>
+              <p>(07) 000 0000</p>
+              <p>hello@snazzypaws.co.nz</p>
+            </div>
+          </div>
+          <div>
+            <p class="footer__heading">Quick Links</p>
+            <nav class="footer__links" aria-label="Footer navigation">
+              <a href="index.html">Home</a>
+              <a href="services.html">Services</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="booking.html">Booking</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+          </div>
+          <div>
+            <p class="footer__heading">Opening Hours</p>
+            <div class="footer__hours">
+              <p>Monday – Saturday: 9:00am – 5:00pm</p>
+              <p>Sunday: Closed</p>
+            </div>
+            <p class="footer__heading" style="margin-top:1.25rem;">Newsletter</p>
+            <form class="footer__newsletter-form" aria-label="Newsletter signup">
+              <label for="newsletter-email-s" class="sr-only">Email address</label>
+              <input type="email" id="newsletter-email-s" name="email" placeholder="Email address" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p style="margin-top:0.4rem;">© 2025 Snazzy Paws Grooming. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector('.nav__toggle');
+      const mobileNav = document.querySelector('.nav__mobile');
+      toggle.addEventListener('click', function () {
+        const isOpen = mobileNav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', isOpen);
+        mobileNav.setAttribute('aria-hidden', !isOpen);
+      });
+    </script>
+
+  </body>
+</html>

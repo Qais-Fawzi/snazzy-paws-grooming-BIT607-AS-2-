@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Book a grooming appointment at Snazzy Paws Grooming in Hamilton — quick and easy online booking." />
+    <title>Booking | Snazzy Paws Grooming</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="site-header" role="banner">
+      <nav class="nav container" aria-label="Main navigation">
+        <a href="index.html" class="nav__brand" aria-label="Snazzy Paws Grooming — Home">
+          <span class="nav__brand-icon" aria-hidden="true">🐾</span>
+          Snazzy Paws Grooming
+        </a>
+        <ul class="nav__links" role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="booking.html" class="active" aria-current="page">Booking</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <a href="booking.html" class="btn btn--primary nav__cta">Book Now</a>
+        <button
+          class="nav__toggle"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+      <nav class="nav__mobile" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="booking.html" aria-current="page">Booking</a>
+        <a href="contact.html">Contact</a>
+        <a href="booking.html" class="btn btn--primary">Book Now</a>
+      </nav>
+    </header>
+
+    <!-- ===================== MAIN ===================== -->
+    <main id="main-content">
+
+      <!-- Page Hero -->
+      <section class="page-hero" aria-label="Booking page header">
+        <div class="container">
+          <h1>Book an Appointment</h1>
+          <p>Fill in the form below and we will confirm your booking shortly.</p>
+        </div>
+      </section>
+
+      <!-- Booking Form + Sidebar -->
+      <section class="section" aria-labelledby="booking-form-heading">
+        <div class="container">
+          <div class="booking-layout">
+
+            <!-- Booking Form -->
+            <div>
+              <div class="form-card">
+                <h2 id="booking-form-heading" style="margin-bottom:0.4rem;">Booking Details</h2>
+                <p style="font-size:0.95rem; margin-bottom:1.75rem;">Fields marked with <span style="color:var(--orange);">*</span> are required.</p>
+
+                <!-- Your Details -->
+                <fieldset class="form-section">
+                  <legend class="form-section__title">Your Details</legend>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="first-name">First name <span class="required" aria-label="required">*</span></label>
+                      <input
+                        type="text"
+                        id="first-name"
+                        name="first-name"
+                        placeholder="e.g. John"
+                        autocomplete="given-name"
+                        aria-required="true"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="last-name">Last name <span class="required" aria-label="required">*</span></label>
+                      <input
+                        type="text"
+                        id="last-name"
+                        name="last-name"
+                        placeholder="e.g. Smith"
+                        autocomplete="family-name"
+                        aria-required="true"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="email">Email address <span class="required" aria-label="required">*</span></label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="e.g. john.smith@email.com"
+                        autocomplete="email"
+                        aria-required="true"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="phone">Phone number <span class="required" aria-label="required">*</span></label>
+                      <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="e.g. 021 000 0000"
+                        autocomplete="tel"
+                        aria-required="true"
+                      />
+                    </div>
+                  </div>
+                </fieldset>
+
+                <!-- Dog's Details -->
+                <fieldset class="form-section">
+                  <legend class="form-section__title">Your Dog's Details</legend>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="dog-name">Dog's name <span class="required" aria-label="required">*</span></label>
+                      <input
+                        type="text"
+                        id="dog-name"
+                        name="dog-name"
+                        placeholder="e.g. Buddy"
+                        aria-required="true"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="dog-breed">Breed <span class="required" aria-label="required">*</span></label>
+                      <input
+                        type="text"
+                        id="dog-breed"
+                        name="dog-breed"
+                        placeholder="e.g. Golden Retriever"
+                        aria-required="true"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="dog-age">Dog's age</label>
+                    <input
+                      type="text"
+                      id="dog-age"
+                      name="dog-age"
+                      placeholder="e.g. 3 years"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="special-requirements">Any special requirements or notes</label>
+                    <textarea
+                      id="special-requirements"
+                      name="special-requirements"
+                      placeholder="e.g. skin condition, nervous around clippers"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </fieldset>
+
+                <!-- Select a Service -->
+                <fieldset class="form-section">
+                  <legend class="form-section__title">Select a Service</legend>
+                  <div class="form-group">
+                    <label for="service">Grooming service <span class="required" aria-label="required">*</span></label>
+                    <select id="service" name="service" aria-required="true">
+                      <option value="" disabled selected>Select a service ↓</option>
+                      <option value="bath-brush">Bath &amp; Brush ($25–$50)</option>
+                      <option value="haircut">Haircut ($45–$85)</option>
+                      <option value="nail-trim">Nail Trim ($10–$20)</option>
+                      <option value="ear-cleaning">Ear Cleaning ($10–$15)</option>
+                      <option value="teeth-brushing">Teeth Brushing ($10–$15)</option>
+                      <option value="full-groom">Full Groom ($60–$120)</option>
+                      <option value="spa">Spa Package ($75–$150)</option>
+                      <option value="deshedding">De-shedding Treatment ($20–$40 add-on)</option>
+                      <option value="medicated-bath">Medicated Bath ($20–$40 add-on)</option>
+                      <option value="flea-tick">Flea &amp; Tick Treatment ($15–$30)</option>
+                      <option value="express">Express Service ($15–$25 add-on)</option>
+                      <option value="special-breed">Special-breed Cuts (price on consultation)</option>
+                      <option value="puppy">Puppy Package ($30–$60)</option>
+                      <option value="senior">Senior Dog Package ($40–$80)</option>
+                    </select>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="preferred-date">Preferred date <span class="required" aria-label="required">*</span></label>
+                      <input
+                        type="date"
+                        id="preferred-date"
+                        name="preferred-date"
+                        aria-required="true"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="preferred-time">Preferred time <span class="required" aria-label="required">*</span></label>
+                      <select id="preferred-time" name="preferred-time" aria-required="true">
+                        <option value="" disabled selected>Select a time ↓</option>
+                        <option value="9am">9:00am</option>
+                        <option value="10am">10:00am</option>
+                        <option value="11am">11:00am</option>
+                        <option value="12pm">12:00pm</option>
+                        <option value="1pm">1:00pm</option>
+                        <option value="2pm">2:00pm</option>
+                        <option value="3pm">3:00pm</option>
+                        <option value="4pm">4:00pm</option>
+                      </select>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <!-- Gift Voucher -->
+                <fieldset class="form-section">
+                  <legend class="form-section__title">Have a Gift Voucher?</legend>
+                  <div class="voucher-box">
+                    <p class="voucher-box__label">Apply voucher code</p>
+                    <div class="voucher-input-row">
+                      <label for="voucher-code" class="sr-only">Voucher code</label>
+                      <input
+                        type="text"
+                        id="voucher-code"
+                        name="voucher-code"
+                        placeholder="e.g. SNAZZY-2024-GIFT"
+                        aria-label="Gift voucher code"
+                      />
+                      <button type="button" aria-label="Apply voucher code">Apply →</button>
+                    </div>
+                  </div>
+                </fieldset>
+
+                <!-- Submit -->
+                <div class="form-section" style="border-bottom:none; padding-bottom:0; margin-bottom:0;">
+                  <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center; padding:1rem;" aria-label="Submit booking request">
+                    Submit Booking →
+                  </button>
+                  <div class="confirmation-msg" role="alert" aria-live="polite" id="booking-confirmation">
+                    ✓ Thank you — your booking request has been received. We will be in touch shortly to confirm your appointment.
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="booking-sidebar" aria-label="Booking information">
+              <div class="sidebar-card">
+                <h3>Opening Hours</h3>
+                <p>Monday – Saturday<br />9:00am – 5:00pm</p>
+                <p style="margin-top:0.5rem;">Sunday: Closed</p>
+              </div>
+              <div class="sidebar-card">
+                <h3>What to Expect</h3>
+                <p>After submitting your booking request, we will contact you within one business day to confirm your appointment time.</p>
+              </div>
+              <div class="sidebar-card">
+                <h3>Questions?</h3>
+                <p>Call us on <strong>(07) 000 0000</strong> or <a href="contact.html" style="color:var(--green-dark); font-weight:600;">send us a message</a>.</p>
+              </div>
+            </aside>
+
+          </div>
+
+          <!-- FAQ -->
+          <section style="margin-top:3rem;" aria-labelledby="faq-heading">
+            <h2 id="faq-heading" style="margin-bottom:1.5rem;">Booking FAQs</h2>
+            <div class="faq-list">
+
+              <div class="faq-item">
+                <button
+                  class="faq-item__question"
+                  aria-expanded="false"
+                  aria-controls="faq-1"
+                >
+                  How far in advance should I book?
+                  <span class="faq-item__icon" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-item__answer" id="faq-1" role="region">
+                  We recommend booking at least 3–5 days in advance, especially for weekends. For popular time slots, a week or more ahead is ideal.
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button
+                  class="faq-item__question"
+                  aria-expanded="false"
+                  aria-controls="faq-2"
+                >
+                  What is your cancellation policy?
+                  <span class="faq-item__icon" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-item__answer" id="faq-2" role="region">
+                  We ask for at least 24 hours notice for cancellations so we can offer the slot to another dog. Last-minute cancellations may incur a fee.
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button
+                  class="faq-item__question"
+                  aria-expanded="false"
+                  aria-controls="faq-3"
+                >
+                  Do I need to stay while my dog is groomed?
+                  <span class="faq-item__icon" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-item__answer" id="faq-3" role="region">
+                  No — most owners drop their dog off and return when the groom is complete. We will give you an estimated pickup time when you book.
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button
+                  class="faq-item__question"
+                  aria-expanded="false"
+                  aria-controls="faq-4"
+                >
+                  How long does a grooming session take?
+                  <span class="faq-item__icon" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-item__answer" id="faq-4" role="region">
+                  Session length varies depending on the service and your dog's size and coat. A bath and brush typically takes 1–2 hours; a full groom may take 2–4 hours.
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button
+                  class="faq-item__question"
+                  aria-expanded="false"
+                  aria-controls="faq-5"
+                >
+                  Do you accept walk-in appointments?
+                  <span class="faq-item__icon" aria-hidden="true">+</span>
+                </button>
+                <div class="faq-item__answer" id="faq-5" role="region">
+                  We occasionally have availability for walk-ins, but we recommend booking in advance to guarantee your preferred time. Call us on the day to check.
+                </div>
+              </div>
+
+            </div>
+          </section>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__grid">
+          <div>
+            <p class="footer__brand">🐾 Snazzy Paws Grooming</p>
+            <div class="footer__info">
+              <p>260 Anglesea Street, Hamilton, New Zealand</p>
+              <p>(07) 000 0000</p>
+              <p>hello@snazzypaws.co.nz</p>
+            </div>
+          </div>
+          <div>
+            <p class="footer__heading">Quick Links</p>
+            <nav class="footer__links" aria-label="Footer navigation">
+              <a href="index.html">Home</a>
+              <a href="services.html">Services</a>
+              <a href="gallery.html">Gallery</a>
+              <a href="booking.html">Booking</a>
+              <a href="contact.html">Contact</a>
+            </nav>
+          </div>
+          <div>
+            <p class="footer__heading">Opening Hours</p>
+            <div class="footer__hours">
+              <p>Monday – Saturday: 9:00am – 5:00pm</p>
+              <p>Sunday: Closed</p>
+            </div>
+            <p class="footer__heading" style="margin-top:1.25rem;">Newsletter</p>
+            <form class="footer__newsletter-form" aria-label="Newsletter signup">
+              <label for="newsletter-email-b" class="sr-only">Email address</label>
+              <input type="email" id="newsletter-email-b" name="email" placeholder="Email address" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p style="margin-top:0.4rem;">© 2025 Snazzy Paws Grooming. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile nav toggle
+      const toggle = document.querySelector('.nav__toggle');
+      const mobileNav = document.querySelector('.nav__mobile');
+      toggle.addEventListener('click', function () {
+        const isOpen = mobileNav.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', isOpen);
+        mobileNav.setAttribute('aria-hidden', !isOpen);
+      });
+
+      // FAQ accordion
+      const faqButtons = document.querySelectorAll('.faq-item__question');
+      faqButtons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          const item = btn.closest('.faq-item');
+          const isOpen = item.classList.toggle('is-open');
+          btn.setAttribute('aria-expanded', isOpen);
+        });
+      });
+
+      // Booking form submission (demo)
+      const submitBtn = document.querySelector('[aria-label="Submit booking request"]');
+      const confirmation = document.getElementById('booking-confirmation');
+      if (submitBtn && confirmation) {
+        submitBtn.addEventListener('click', function () {
+          confirmation.style.display = 'block';
+        });
+      }
+    </script>
+
+  </body>
+</html>
